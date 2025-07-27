@@ -4,10 +4,131 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<title>HTML Assignment 3</title>
+  <style>
+    table.middle {
+      border: 1px solid black;
+      border-spacing: 1px;
+      padding: 1px;
+      width: 100%;
+    }
+
+    td {
+      border: 1px solid black;
+      padding: 5px;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .right {
+      text-align: right;
+    }
+
+    .green {
+      background-color: green;
+    }
+
+    .blue {
+      background-color: blue;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    img {
+      width: 100%;
+      max-width: 300px;
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
+	<h1>HTML Assignment #3</h1>
+
+  <!-- Table 1 -->
+  <table id="table-1" class="middle">
+    <tr>
+      <td id="t11">left</td>
+      <td class="center" id="t12">center</td>
+      <td class="right" id="t13">right</td>
+    </tr>
+    <tr>
+      <td>left</td>
+      <td class="center">center</td>
+      <td class="right">right</td>
+    </tr>
+    <tr>
+      <td>left</td>
+      <td class="center">center</td>
+      <td class="right">right</td>
+    </tr>
+  </table>
+
+  <br>
+
+  <!-- Table 2 -->
+  <table id="table-2" class="middle">
+    <tr>
+        <td colspan="6"></td>
+		
+    </tr>
+    <tr>
+        <td rowspan="4"></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+    </tr>
+    <tr>
+        <td></td>
+		<td colspan="3"></td>
+		<td></td>
+		
+    </tr>
+    <tr>
+        <td></td>
+		<td colspan="3"></td>
+		<td></td>
+		
+    </tr>
+    <tr>
+        <td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+    </tr>
+    <tr>
+        <td colspan="6"></td>
+    </tr>
+	  
+    
+  </table>
+  <br>
+
+  <!-- Table 3 -->
+  <table id="table-3" class="middle">
+    <tr class="green">
+      <td colspan="3"></td>
+    </tr>
+    <tr>
+		<td></td>
+      <td id="t-image" style="border:1px solid black; padding:1px;">
+        <img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2013_FallP3/Luthra%20Portfolio/images-1.jpeg" alt="Basketball Jump">
+      </td>
+		<td></td>
+    </tr>
+    <tr class="blue">
+      <td colspan="3"></td>
+    </tr>
+  </table>
     <script type="text/javascript" src="./script.js">
 </script>
 
